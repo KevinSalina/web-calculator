@@ -3,36 +3,48 @@
 html{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    box-sizing: border-box;
+}
+
+body{
+    background: #344055;
+    color: white;
 }
 
 button{
     cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    vertical-align: middle;
+    color: inherit;
 }
 
 input{
-    max-width: 100px;
+    max-width: 125px;
+    height: 20px;
     text-align: center;
+    border: 1px solid #888098;
+    border-radius: 3px;
 }
 
 .wrapper{
     display: flex;
-    /* background: blue; */
     align-items: center;
     padding: 1rem 0;
     position: relative;
 }
 
 .calc-answer{
-    margin: 0 auto;
+    margin-left: 1rem;
     font-weight: bold;
-    /* background: pink; */
     height: max-content;
 }
 
 .error-msg{
     position: absolute;
     top: 30px;
-    color: red;
+    color: #cfb3cd;
     opacity: 0;
 }
 

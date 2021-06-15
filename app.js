@@ -21,8 +21,11 @@ function calculate() {
     }
 }
 
-
 // Calculate Button Event Listener
 calcBtn.addEventListener('click', calculate)
-
+document.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+        calculate()
+    }
+});
 
