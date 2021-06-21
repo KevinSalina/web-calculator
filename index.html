@@ -10,22 +10,41 @@
 </head>
 
 <body>
-    <h1>Web Calculator</h1>
-    <p class="desc">Enter 2 numbers below to add!</p>
 
-    <div class="wrapper">
-        <div class="calculator-input">
-            <input type="text" name="number1" id="num1">
-            <span>+</span>
-            <input type="text" name="number2" id="num2">
-            <button type="submit">=</button>
+
+    <h1>Simple Web Calculator</h1>
+    <div class="container">
+        <div class="input-display"></div>
+        <div class="btn-row">
+            <button class="btn clear" value="clear">AC</button>
+            <button class="btn trash" value="trash">TR</button>
+            <button class="btn operator" value="sign">+/-</button>
+            <button class="btn operator" value="divide">/</button>
         </div>
-
-        <p class="calc-answer"></p>
-        <p class="error-msg">You must enter a valid number! Try Again</p>
-
+        <div class="btn-row">
+            <button class="btn operand" value="7">7</button>
+            <button class="btn operand" value="8">8</button>
+            <button class="btn operand" value="9">9</button>
+            <button class="btn operator" value="multiply">X</button>
+        </div>
+        <div class="btn-row">
+            <button class="btn operand" value="4">4</button>
+            <button class="btn operand" value="5">5</button>
+            <button class="btn operand" value="6">6</button>
+            <button class="btn operator" value="subtract">-</button>
+        </div>
+        <div class="btn-row">
+            <button class="btn operand" value="1">1</button>
+            <button class="btn operand" value="2">2</button>
+            <button class="btn operand" value="3">3</button>
+            <button class="btn operator" value="add">+</button>
+        </div>
+        <div class="btn-row">
+            <button class="btn operand" value="0">0</button>
+            <button class="btn operand" value=".">.</button>
+            <button class="btn equals" value="equals">=</button>
+        </div>
     </div>
-
 
     <script src="app.js"></script>
 </body>

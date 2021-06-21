@@ -1,6 +1,6 @@
 # Simple Web Calculator
 
-A simple web calulator. So far only adds 2 numbers and handles basic errors.
+A simple web calulator. So far can do basic operations. Work is still needed on more complex inputs.
 
 ## Built with
 
