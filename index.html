@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/421a2e0bfb.js" crossorigin="anonymous"></script>
     <title>Simple Web Calculator</title>
 </head>
 
@@ -14,39 +15,39 @@
 
     <h1>Simple Web Calculator</h1>
     <div class="container">
-        <div class="input-display"></div>
+        <div class="input-display">0</div>
         <div class="btn-row">
             <button class="btn clear" value="clear">AC</button>
-            <button class="btn trash" value="trash">TR</button>
-            <button class="btn operator" value="sign">+/-</button>
-            <button class="btn operator" value="divide">/</button>
+            <button class="btn trash" value="trash"><i class="fas fa-backspace"></i> </button>
+            <button class="btn sign" value="sign">+/-</button>
+            <button class="btn operator" value="divide"><i class="fas fa-divide"></i></button>
         </div>
         <div class="btn-row">
             <button class="btn operand" value="7">7</button>
             <button class="btn operand" value="8">8</button>
             <button class="btn operand" value="9">9</button>
-            <button class="btn operator" value="multiply">X</button>
+            <button class="btn operator" value="multiply"><i class="fas fa-times"></i></button>
         </div>
         <div class="btn-row">
             <button class="btn operand" value="4">4</button>
             <button class="btn operand" value="5">5</button>
             <button class="btn operand" value="6">6</button>
-            <button class="btn operator" value="subtract">-</button>
+            <button class="btn operator" value="subtract"><i class="fas fa-minus"></i></button>
         </div>
         <div class="btn-row">
             <button class="btn operand" value="1">1</button>
             <button class="btn operand" value="2">2</button>
             <button class="btn operand" value="3">3</button>
-            <button class="btn operator" value="add">+</button>
+            <button class="btn operator" value="add"><i class="fas fa-plus"></i></button>
         </div>
         <div class="btn-row">
             <button class="btn operand" value="0">0</button>
             <button class="btn operand" value=".">.</button>
-            <button class="btn equals" value="equals">=</button>
+            <button class="btn equals" value="equals"><i class="fas fa-equals"></i></button>
         </div>
     </div>
 
-    <script src="app.js"></script>
+    <script type="module" src="app.js"></script>
 </body>
 
 </html>

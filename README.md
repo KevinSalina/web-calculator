@@ -1,6 +1,6 @@
 # Simple Web Calculator
 
-A simple web calulator. So far can do basic operations. Work is still needed on more complex inputs.
+A simple web calulator. Can handle multiple operations chained together, with or without new inputs or change in the operator. Can also change sign of current n
 
 ## Built with
 
