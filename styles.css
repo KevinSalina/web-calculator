@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #376996;
+    color: white;
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    background:#1D3461;
+    max-width: 100%;
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.input-display{
+    height: 60px;
+    background: #829CBC;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: .5rem;
+    font-size: 2.4rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn-row{
+    display: flex;
+    gap: .25rem;
+}
+
+.btn{
+    height: 75px;
+    width: 75px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background: #FFFFF3;
+}
+
+.btn.operand{
+    font-size: 1.2rem;
+}
+
+.btn:hover{
+    background: #C6C6BB;
+}
+
+.btn:active{
+    background: #919186;
+}
+
+.btn.operator, .btn.clear, .btn.trash, .btn.equals, .btn.sign{
+    font-weight: bold;
+    background: #FF4365;
+}
+
+.btn.operator:hover, .btn.clear:hover, .btn.trash:hover, .btn.equals:hover, .btn.sign:hover{
+    background: #DA1049;
+}
+
+.btn.operator:active, .btn.clear:active, .btn.trash:active, .btn.equals:active, .btn.sign:active{
+    background: #B50030;
+}
+
+.btn[value="0"]{
+    flex-grow: 2;
+}
