@@ -1,3 +1,5 @@
+import { num1, num3, num2, currentCalcResult, currentOperator, previousOperator, numDisplay } from './handlers.js'
+
 // Helper Functions
 export function currentVariables(location) {
     console.log('%c' + location, 'color: yellow')
