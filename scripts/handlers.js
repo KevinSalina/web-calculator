@@ -35,8 +35,10 @@ export function handleOperator() {
     if (!num1 && !currentOperator || num1 && !currentOperator) {
         num1 = Number(numDisplay)
         numDisplay = '';
+        helper.currentVariables('Inside handle Operator 1st option')
     } else if (num1 && currentOperator) {
         calculate()
+        numDisplay = '';
     }
     currentOperator = this.value
     helper.currentVariables('After Operator')
@@ -72,7 +74,7 @@ export function calculate() {
     }
     display.textContent = helper.numberWithCommas(currentCalcResult)
     currentOperator = null;
-    numDisplay = '';
+    numDisplay = helper.numberWithCommas(currentCalcResult);
     helper.currentVariables('After Calculation')
 }
 
