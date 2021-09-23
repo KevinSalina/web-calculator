@@ -4,12 +4,13 @@ import { performCalculation } from './math.js'
 import { display } from '../app.js'
 
 // Variables
-let num1 = null; let num2 = null;
-let num3 = null;
-let currentCalcResult = null;
-let currentOperator = null;
-let previousOperator = null;
-let numDisplay = '';
+export let num1 = null;
+export let num2 = null;
+export let num3 = null;
+export let currentCalcResult = null;
+export let currentOperator = null;
+export let previousOperator = null;
+export let numDisplay = '';
 
 
 // Handle Operands
@@ -31,13 +32,16 @@ export function handleOperand() {
 
 // Hanlde Operators
 export function handleOperator() {
-    if (!num1 && !currentOperator) {
+    if (!num1 && !currentOperator || num1 && !currentOperator) {
         num1 = Number(numDisplay)
         numDisplay = '';
+        helper.currentVariables('Inside handle Operator 1st option')
     } else if (num1 && currentOperator) {
         calculate()
+        numDisplay = '';
     }
     currentOperator = this.value
+    helper.currentVariables('After Operator')
 }
 
 // Handle Eqauls Btn
@@ -70,7 +74,8 @@ export function calculate() {
     }
     display.textContent = helper.numberWithCommas(currentCalcResult)
     currentOperator = null;
-    numDisplay = '';
+    numDisplay = helper.numberWithCommas(currentCalcResult);
+    helper.currentVariables('After Calculation')
 }
 
 // Handle Sign Btn
